@@ -1,0 +1,30 @@
+.about-header {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  grid-template-rows: auto auto;
+  grid-template-areas: 
+      "image title"
+      "image text";
+  grid-gap: 0.5rem;
+}
+
+.profile-image {
+  grid-area: image;
+}
+
+.recent-posts {
+  text-align: center;
+}
+
+
+h1 {
+  grid-area: title;
+  font-size: 1.5rem;
+  margin-bottom: 0;
+}
+
+p {
+  grid-area: text;
+  font-size: 0.8rem;
+}
+
